@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        /* 복합선택자 : 여러 개의 요소를 한 번에 지정 */
+
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* 상하좌우 모두 10px의 여백 */
+            padding: 10px;
+        } 
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>  
+        <!-- 테이블 한 줄 추가마다 tr 사용 -->
+        <!-- 가로로 col 세로로 row -->
+        <tr>
+            <th>
+                항목1
+            </th>
+            <th>
+                항목2
+            </th>
+            <th>
+                항목3
+            </th> 
+            <th>
+                항목4
+            </th>
+            </tr>
+            <td>
+                html
+            </td>
+            <td>
+            css
+            </td>
+            <td>
+            javascript
+            </td>
+            <td rowspan="2">
+                vs code
+            </td>
+        </tr>
+        <tr>
+            <td>
+            java
+            </td>
+            <td colspan="2"> 
+                database
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="../images/화면 캡처 2024-01-09 143918.png" width="50" height="30" alt="">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
