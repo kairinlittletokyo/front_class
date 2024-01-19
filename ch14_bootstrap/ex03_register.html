@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* 세로 방향 중앙 정렬 */
+            background-color: skyblue; /* 전체 배경색을 파란색으로 지정 */
+            color: white; /* 전체 텍스트 색상을 흰색으로 지정 */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; /* 세로 방향 중앙 정렬 */
+            align-items: center;
+        }
+        h1 {
+            margin-left: 0px; 
+            margin-bottom: 20px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        h6 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../images/8e8c72a1459ad7332b14306bea1af865.gif" alt="회원가입 이미지" width="500" height="300">
+
+        <h1>바다이야기</h1>
+
+        <!-- onsubmit = from 에 작성한 정보를 제출(submit) 할 때 함수를 호출하도록 하고
+                        함수호출 결과가 true, false 인지에 따라 form 제출을 제어-->
+        <form action="#" method="post" name="loginForm" onsubmit="return login_check()">
+            email: <input type="email" name="memberEmail" id="member-email"> <br>
+            <h6 id="email-result"></h6>
+            password: <input type="text" name="memberpassword" id="member-password"> <br>
+            <h6 id="pass-result"></h6>
+            <input type="submit" value="login">
+        </form>
+        <!-- #은 어디 가지말고 그 자리에 있으라는 코드 -->
+        
+        <script>
+            // 함수 정의 부분은 그대로 유지합니다.
+        </script>
+    </body>
+    </html>
