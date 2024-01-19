@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="email-value" name="emailValue"> <span>@</span>
+    <input type="text" id="email-domain" name="emailDomain">
+    <select id="email-domain-select" onchange="domainSelect()">
+        <option value="">직접 입력</option>
+        <option value="naver.com">네이버</option>
+        <option value="gmail.com">지메일</option>
+        <option value="hanmail.net">한메일</option>
+    </select>
+
+    <script>
+        // function domainSelect() {
+        //     var emailSelect = document.getElementById("email-domain-select");
+        //     var emailDomainInput = document.getElementById("email-domain");
+
+        //     if (emailSelect.value === "") {
+        //         // 직접 입력일 경우 빈 문자열로 설정
+        //         emailDomainInput.value = "";
+        //     } else {
+        //         // 선택된 옵션의 값을 이메일 도메인에 설정
+        //         emailDomainInput.value = emailSelect.value;
+        //     }
+        // }
+
+        const domain_select = () => {
+            console.log("함수 호출");   
+            const domain = document.getElementById("email-domain-select");
+            console.log(domain);
+            const domainInput = document.getElementById("email-domain");
+            domainInput.value = domain.value;
+        }
+    </script>
 </body>
 </html>
